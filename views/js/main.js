@@ -440,12 +440,13 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
-  var scroll = document.body.scrollTop / 1250;
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  var scroll = scrollTop / 1250;
   var length = items.length;
 
   for (var i = 0; i < length; i++) {
-    var phase = Math.sin((scroll) + (i % 5));
-    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+    var phase = Math.sin(scroll + (i % 5));
+    items[i].style.transform = 'translateX(' + (100 * phase) + 'px)';
   }
 
   window.performance.mark("mark_end_frame");
@@ -458,7 +459,7 @@ function updatePositions() {
 
 window.addEventListener('scroll', updatePositions);
 
-document.addEventListener('DOMContentLoaded', function () {
+function createSlidingPizzas() {
   var cols = 8;
   var s = 256;
   var height = window.screen.height;
@@ -474,10 +475,16 @@ document.addEventListener('DOMContentLoaded', function () {
     elem.src = "images/pizza_mini.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
-    elem.basicLeft = (i % cols) * s;
+    elem.style.left = (i % cols) * s + 'px';
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     slidingPizzaDiv.appendChild(elem);
   }
   slidingPizzaDiv.display = 'block';
   updatePositions();
-});
+}
+
+if (document.readystate != "loading") {
+  createSlidingPizzas();
+} else {
+  document.addEventListener("DOMContentLoaded", createSlidingPizzas());
+}
