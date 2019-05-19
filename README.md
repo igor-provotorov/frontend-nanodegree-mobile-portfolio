@@ -1,3 +1,7 @@
-https://github.com/igor-provotorov/frontend-nanodegree-mobile-portfolio/tree/gh-pages <br/>
-https://igor-provotorov.github.io/frontend-nanodegree-mobile-portfolio/index.html <br/>
-https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Figor-provotorov.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Findex.html
+* [Link to repo](https://github.com/igor-provotorov/frontend-nanodegree-mobile-portfolio/tree/gh-pages)
+* [Link to gh-pages](https://igor-provotorov.github.io/frontend-nanodegree-mobile-portfolio/index.html)
+* [Link to google pagespeed insights - index.html](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Figor-provotorov.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Findex.html)
+* [Link to google pagespeed insights - project-2048.html](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Figor-provotorov.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Fproject-2048.html&tab=mobile)
+* [Link to google pagespeed insights - project-mobile.html](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Figor-provotorov.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Fproject-mobile.html)
+* [Link to google pagespeed insights - project-webperf.html](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Figor-provotorov.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Fproject-webperf.html)
+* [Link to google pagespeed insights - pizza.html](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Figor-provotorov.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Fviews%2Fpizza.html)
