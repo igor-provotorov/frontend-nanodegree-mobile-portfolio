@@ -461,7 +461,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var height = window.screen.height;
   var rows = height / s;
   var numPizzas = rows * cols;
-  console.log(numPizzas);
   var elem;
   var slidingPizzaDiv = document.querySelector("#movingPizzas1");
   slidingPizzaDiv.display = 'none';
