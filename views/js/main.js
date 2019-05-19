@@ -506,11 +506,16 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function () {
   var cols = 8;
   var s = 256;
+  var height = window.screen.height;
+  var rows = height / s;
+  var numPizzas = rows * cols;
+  console.log(numPizzas);
+  var elem;
   var slidingPizzaDiv = document.querySelector("#movingPizzas1");
   slidingPizzaDiv.display = 'none';
 
-  for (var i = 0; i < 35; i++) {
-    var elem = document.createElement('img');
+  for (var i = 0; i < numPizzas; i++) {
+    elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza_mini.png";
     elem.style.height = "100px";
